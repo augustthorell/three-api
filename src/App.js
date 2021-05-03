@@ -9,6 +9,7 @@ import { Text } from "troika-three-text";
 import Model from './model'
 import Axios from 'axios'
 
+
 extend({ OrbitControls, Text });
 
 const Controls = () => {
@@ -250,9 +251,9 @@ const App = () => {
     }
 
     const travelFetch = () => {
+        const apiKey = process.env.REACT_APP_APIKEY
 
-
-        Axios.get('https://api.resrobot.se/v2/trip?key=bf8ffded-3714-47dc-89b1-6d1e62072499&originId=740024807&destId=740021654&format=json&type=JNY&WALK=0&originWalk=0&destWalk=0').then((response) => {
+        Axios.get(`https://api.resrobot.se/v2/trip?key=${apiKey}&originId=740024807&destId=740021654&format=json&type=JNY&WALK=0&originWalk=0&destWalk=0`).then((response) => {
             setTravel(response.data.Trip)
         })
     }
