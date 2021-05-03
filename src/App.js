@@ -86,7 +86,7 @@ const Weather = ({ weather, position }) => {
         >
             <text
                 {...opts}
-                text={weather.degree ? [weather.degree + ' and ' + weather.type] : ''}
+                text={weather.degree ? weather.degree + ' and ' + weather.type : ''}
                 font={font}
                 anchorX="center"
                 anchorY="middle"
