@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/three-api/static/css/main.544cd4d5.chunk.css",
-    "main.js": "/three-api/static/js/main.33a0de41.chunk.js",
-    "main.js.map": "/three-api/static/js/main.33a0de41.chunk.js.map",
+    "main.js": "/three-api/static/js/main.a9dded97.chunk.js",
+    "main.js.map": "/three-api/static/js/main.a9dded97.chunk.js.map",
     "runtime-main.js": "/three-api/static/js/runtime-main.7942fa2c.js",
     "runtime-main.js.map": "/three-api/static/js/runtime-main.7942fa2c.js.map",
     "static/js/2.fbc69240.chunk.js": "/three-api/static/js/2.fbc69240.chunk.js",
     "static/js/2.fbc69240.chunk.js.map": "/three-api/static/js/2.fbc69240.chunk.js.map",
     "index.html": "/three-api/index.html",
     "static/css/main.544cd4d5.chunk.css.map": "/three-api/static/css/main.544cd4d5.chunk.css.map",
-    "static/js/2.fbc69240.chunk.js.LICENSE.txt": "/three-api/static/js/2.fbc69240.chunk.js.LICENSE.txt"
+    "static/js/2.fbc69240.chunk.js.LICENSE.txt": "/three-api/static/js/2.fbc69240.chunk.js.LICENSE.txt",
+    "static/media/dancing.da19c707.glb": "/three-api/static/media/dancing.da19c707.glb"
   },
   "entrypoints": [
     "static/js/runtime-main.7942fa2c.js",
     "static/js/2.fbc69240.chunk.js",
     "static/css/main.544cd4d5.chunk.css",
-    "static/js/main.33a0de41.chunk.js"
+    "static/js/main.a9dded97.chunk.js"
   ]
 }
