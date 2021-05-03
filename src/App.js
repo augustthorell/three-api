@@ -101,7 +101,6 @@ const Weather = ({ weather, position }) => {
 
 const SL = ({ travel, position }) => {
     const font = new THREE.FontLoader().parse(JSONfont);
-
     const [opts, setOpts] = useState({
         font: font,
         fontSize: 12,
@@ -140,7 +139,6 @@ const SL = ({ travel, position }) => {
                         <meshPhongMaterial attach="material" color={opts.color} />
                     ) : null}
                 </text>
-
                 <text
                     position={[6, -15, 0]}
                     {...opts}
@@ -230,7 +228,6 @@ const ModelComponent = ({ surprise }) => {
     } else {
         return null
     }
-
 }
 
 const App = () => {
@@ -246,22 +243,18 @@ const App = () => {
     const weatherFetch = () => {
         Axios.get('https://goweather.herokuapp.com/weather/Stockholm').then((response) => {
             setWeather({ degree: response.data.temperature, type: response.data.description })
-            console.log(weather)
         })
     }
 
     const travelFetch = () => {
         const apiKey = process.env.REACT_APP_APIKEY
-
         Axios.get(`https://api.resrobot.se/v2/trip?key=${apiKey}&originId=740024807&destId=740021654&format=json&type=JNY&WALK=0&originWalk=0&destWalk=0`).then((response) => {
             setTravel(response.data.Trip)
         })
     }
-
-    const surpriceClick = () => {
+    const surpriseClick = () => {
         setSurprise(!surprise)
     }
-
 
     return (
         <Canvas
@@ -286,7 +279,7 @@ const App = () => {
             </Suspense>
             <Button test={weatherFetch} title={'Click to get weather report'} position={[30, 0, 100]} />
             <Button test={travelFetch} title={'Click to see the next train'} position={[30, 0, 130]} />
-            <Button test={surpriceClick} title={'    Click for a surprise'} position={[30, 0, 160]} />
+            <Button test={surpriseClick} title={'    Click for a surprise'} position={[30, 0, 160]} />
 
 
         </Canvas>
